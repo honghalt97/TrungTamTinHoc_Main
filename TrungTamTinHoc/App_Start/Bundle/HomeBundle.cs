@@ -23,6 +23,12 @@ namespace TrungTamTinHoc.App_Start.Bundle
                 "~/public/js/home/registerAccount/register.js"
             ));
 
+            bundles.Add(new ScriptBundle("~/public/js/registerCourse").Include(
+                "~/public/assets/moment/moment.js",
+                "~/public/assets/bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js",
+                "~/public/js/home/registerCourse/register.js"
+            ));
+
             bundles.Add(new ScriptBundle("~/public/js/registerSuccess").Include(
                 "~/public/js/home/registerAccount/registerSuccess.js"
             ));
@@ -30,10 +36,15 @@ namespace TrungTamTinHoc.App_Start.Bundle
             bundles.Add(new ScriptBundle("~/public/js/activeAccount").Include(
                 "~/public/js/home/registerAccount/activeAccount.js"
             ));
+            
+            bundles.Add(new StyleBundle("~/public/css/registerCourse").Include(
+                "~/public/assets/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css"
+            ));
 
             bundles.Add(new StyleBundle("~/public/css/registerAccount").Include(
                 "~/public/assets/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css"
             ));
+
             bundles.Add(new StyleBundle("~/public/css/register").Include(
                 "~/public/css/home/registerAccount/register.css"
             ));

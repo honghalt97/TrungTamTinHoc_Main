@@ -40,6 +40,9 @@
         '37': 'Email này đã tồn tại',
         '38': 'Email này không tồn tại trong hệ thống',
         '39': 'Mail kích hoạt đã được gửi đến địa chỉ email bạn đăng ký, vui lòng kiểm tra email để kích hoạt tài khoản',
+        '40': 'Link SEO đã tồn tại',
+        '41': 'Đăng ký học thành công. Nhấn OK để về trang chủ!',
+        '42': 'Khóa học không tồn tại. Vui lòng kiểm tra lại',
         '100': 'Có lỗi xảy ra trong quá trình xử lý, vui lòng thử lại'
     },
     'en':
@@ -83,6 +86,9 @@
         '37': 'Email này đã tồn tại',
         '38': 'Email này không tồn tại trong hệ thống',
         '39': 'Mail kích hoạt đã được gửi đến địa chỉ email bạn đăng ký, vui lòng kiểm tra email để kích hoạt tài khoản',
+        '40': 'Link SEO đã tồn tại',
+        '41': 'Đăng ký học thành công. Nhấn OK để về trang chủ!',
+        '42': 'Khóa học không tồn tại. Vui lòng kiểm tra lại,
         '100' : 'Có lỗi xảy ra trong quá trình xử lý, vui lòng thử lại'
     }
 };
@@ -132,6 +138,9 @@ var _typeMsg = {
     '37': 4,
     '38': 4,
     '39': 2,
+    '40': 4,
+    '41': 2,
+    '42': 4,
     '100': 4
 };
 var _title = {
