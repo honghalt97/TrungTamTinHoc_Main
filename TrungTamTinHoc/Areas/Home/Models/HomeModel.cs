@@ -118,7 +118,7 @@ namespace TrungTamTinHoc.Areas.Home.Models
                         SoLuongView = x.SoLuongView,
                         SoLuongComment = x.CommentKhoaHoc.Count,
                         SoLuongDanhGia = x.DanhGiaKhoaHoc.Count,
-                        DiemDanhGia = x.DanhGiaKhoaHoc.Count != 0 ? x.DanhGiaKhoaHoc.Sum(y => y.DiemDanhGia) : 0,
+                        DiemDanhGia = x.DanhGiaKhoaHoc.Sum(y => y.DiemDanhGia),
                         ChoPhepDangKy = x.ChoPhepDangKy
                     }).OrderBy(x => x.NgayKhaiGiang).Take(3).ToList();
                 return cacKhoaHoc;

@@ -180,18 +180,5 @@ namespace TTTH.Common
                 return new CaiDatHeThong();
             }
         }
-
-        public static int SoLuongDangKy()
-        {
-            try
-            {
-                DataContext context = new DataContext();
-                return context.DangKyTemp.Count(x => x.TrangThai == 1 && !x.DelFlag);
-            }
-            catch
-            {
-                return 0;
-            }
-        }
     }
 }

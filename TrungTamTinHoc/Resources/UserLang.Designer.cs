@@ -106,15 +106,6 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Address.
-        /// </summary>
-        public static string Address {
-            get {
-                return ResourceManager.GetString("Address", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Album.
         /// </summary>
         public static string Album {
@@ -156,15 +147,6 @@ namespace Resources {
         public static string ConfirmPassword {
             get {
                 return ResourceManager.GetString("ConfirmPassword", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Course.
-        /// </summary>
-        public static string Course {
-            get {
-                return ResourceManager.GetString("Course", resourceCulture);
             }
         }
         
@@ -232,15 +214,6 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Fullname of child.
-        /// </summary>
-        public static string FullnameOfChild {
-            get {
-                return ResourceManager.GetString("FullnameOfChild", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Gender.
         /// </summary>
         public static string Gender {
@@ -273,15 +246,6 @@ namespace Resources {
         public static string IAgreeWith {
             get {
                 return ResourceManager.GetString("IAgreeWith", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Your job.
-        /// </summary>
-        public static string Job {
-            get {
-                return ResourceManager.GetString("Job", resourceCulture);
             }
         }
         
@@ -394,15 +358,6 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Note.
-        /// </summary>
-        public static string Note {
-            get {
-                return ResourceManager.GetString("Note", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Do not have an account?.
         /// </summary>
         public static string NotHaveAccount {
@@ -430,15 +385,6 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Phone number.
-        /// </summary>
-        public static string PhoneNumber {
-            get {
-                return ResourceManager.GetString("PhoneNumber", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Privacy Policy.
         /// </summary>
         public static string PrivacyPolicy {
@@ -453,15 +399,6 @@ namespace Resources {
         public static string Register {
             get {
                 return ResourceManager.GetString("Register", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Register Course.
-        /// </summary>
-        public static string RegisterCourse {
-            get {
-                return ResourceManager.GetString("RegisterCourse", resourceCulture);
             }
         }
         
@@ -615,15 +552,6 @@ namespace Resources {
         public static string WhyIpro {
             get {
                 return ResourceManager.GetString("WhyIpro", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Your name.
-        /// </summary>
-        public static string Yourname {
-            get {
-                return ResourceManager.GetString("Yourname", resourceCulture);
             }
         }
     }

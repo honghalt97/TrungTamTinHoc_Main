@@ -132,9 +132,6 @@
   <data name="ActiveAccountPart4" xml:space="preserve">
     <value>Account activation information has expired, please re-enter the registered email to activate the account</value>
   </data>
-  <data name="Address" xml:space="preserve">
-    <value>Address</value>
-  </data>
   <data name="Album" xml:space="preserve">
     <value>Album</value>
   </data>
@@ -149,9 +146,6 @@
   </data>
   <data name="ConfirmPassword" xml:space="preserve">
     <value>Confirm password</value>
-  </data>
-  <data name="Course" xml:space="preserve">
-    <value>Course</value>
   </data>
   <data name="Courses" xml:space="preserve">
     <value>COURSES</value>
@@ -174,9 +168,6 @@
   <data name="FirstName" xml:space="preserve">
     <value>First name</value>
   </data>
-  <data name="FullnameOfChild" xml:space="preserve">
-    <value>Fullname of child</value>
-  </data>
   <data name="Gender" xml:space="preserve">
     <value>Gender</value>
   </data>
@@ -188,9 +179,6 @@
   </data>
   <data name="IAgreeWith" xml:space="preserve">
     <value>I agree with</value>
-  </data>
-  <data name="Job" xml:space="preserve">
-    <value>Your job</value>
   </data>
   <data name="Language" xml:space="preserve">
     <value>Language</value>
@@ -228,9 +216,6 @@
   <data name="MenuHome" xml:space="preserve">
     <value>Home</value>
   </data>
-  <data name="Note" xml:space="preserve">
-    <value>Note</value>
-  </data>
   <data name="NotHaveAccount" xml:space="preserve">
     <value>Do not have an account?</value>
   </data>
@@ -240,17 +225,11 @@
   <data name="Password" xml:space="preserve">
     <value>Password</value>
   </data>
-  <data name="PhoneNumber" xml:space="preserve">
-    <value>Phone number</value>
-  </data>
   <data name="PrivacyPolicy" xml:space="preserve">
     <value>Privacy Policy</value>
   </data>
   <data name="Register" xml:space="preserve">
     <value>Register</value>
-  </data>
-  <data name="RegisterCourse" xml:space="preserve">
-    <value>Register Course</value>
   </data>
   <data name="RegisterNow" xml:space="preserve">
     <value>Register now</value>
@@ -302,8 +281,5 @@
   </data>
   <data name="WhyIpro" xml:space="preserve">
     <value>WHY US?</value>
-  </data>
-  <data name="Yourname" xml:space="preserve">
-    <value>Your name</value>
   </data>
 </root>

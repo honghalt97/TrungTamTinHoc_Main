@@ -72,7 +72,6 @@ $(document).ready(function () {
         $('.dataTable').each(function () { $(this).dataTable().fnDraw(); });
     });
 
-
     // check active menu
     $SIDEBAR_MENU.find('a[href="' + CURRENT_URL + '"]').parent('li').addClass('current-page');
 

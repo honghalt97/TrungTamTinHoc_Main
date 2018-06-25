@@ -132,9 +132,6 @@
   <data name="ActiveAccountPart4" xml:space="preserve">
     <value>Thông tin kích hoạt tài khoản đã hết hạn sử dụng, vui lòng nhập lại email đã đăng ký để kích hoạt tài khoản</value>
   </data>
-  <data name="Address" xml:space="preserve">
-    <value>Địa chỉ</value>
-  </data>
   <data name="Album" xml:space="preserve">
     <value>Album ảnh</value>
   </data>
@@ -149,9 +146,6 @@
   </data>
   <data name="ConfirmPassword" xml:space="preserve">
     <value>Nhập lại mật khẩu</value>
-  </data>
-  <data name="Course" xml:space="preserve">
-    <value>Khóa học đăng ký</value>
   </data>
   <data name="Courses" xml:space="preserve">
     <value>CÁC KHÓA HỌC</value>
@@ -174,9 +168,6 @@
   <data name="FirstName" xml:space="preserve">
     <value>Họ</value>
   </data>
-  <data name="FullnameOfChild" xml:space="preserve">
-    <value>Họ và tên của bé</value>
-  </data>
   <data name="Gender" xml:space="preserve">
     <value>Giới tính</value>
   </data>
@@ -188,9 +179,6 @@
   </data>
   <data name="IAgreeWith" xml:space="preserve">
     <value>Tôi đồng ý với</value>
-  </data>
-  <data name="Job" xml:space="preserve">
-    <value>Nghề nghiệp của bạn</value>
   </data>
   <data name="Language" xml:space="preserve">
     <value>Ngôn ngữ</value>
@@ -228,9 +216,6 @@
   <data name="MenuHome" xml:space="preserve">
     <value>Trang chủ</value>
   </data>
-  <data name="Note" xml:space="preserve">
-    <value>Ghi chú</value>
-  </data>
   <data name="NotHaveAccount" xml:space="preserve">
     <value>Bạn chưa có tài khoản?</value>
   </data>
@@ -240,17 +225,11 @@
   <data name="Password" xml:space="preserve">
     <value>Mật khẩu</value>
   </data>
-  <data name="PhoneNumber" xml:space="preserve">
-    <value>Số điện thoại</value>
-  </data>
   <data name="PrivacyPolicy" xml:space="preserve">
     <value>Chính sách bảo mật</value>
   </data>
   <data name="Register" xml:space="preserve">
     <value>Đăng ký</value>
-  </data>
-  <data name="RegisterCourse" xml:space="preserve">
-    <value>Đăng ký khóa học</value>
   </data>
   <data name="RegisterNow" xml:space="preserve">
     <value>Đăng ký ngay</value>
@@ -302,8 +281,5 @@
   </data>
   <data name="WhyIpro" xml:space="preserve">
     <value>TẠI SAO LẠI LÀ IPRO?</value>
-  </data>
-  <data name="Yourname" xml:space="preserve">
-    <value>Họ tên bạn</value>
   </data>
 </root>

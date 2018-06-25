@@ -7,15 +7,11 @@ using TrungTamTinHoc.Controllers;
 
 namespace TrungTamTinHoc.Areas.Admin.Controllers
 {
-    public class DashboardController : Controller
+    public class DashboardController : BaseAdminController
     {
         // GET: Admin/Dashboard
         public ActionResult Index()
         {
-            if (Session["login"] == null)
-            {
-                return RedirectToAction("Index", "AdminLogin");
-            }
             return View();
         }
     }

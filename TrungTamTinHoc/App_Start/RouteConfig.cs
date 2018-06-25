@@ -63,13 +63,6 @@ namespace TrungTamTinHoc
             ).DataTokens.Add("area", "home");
 
             routes.MapRoute(
-                name: "DangKyKhoaHoc",
-                url: "dang-ky-khoa-hoc/{id}",
-                defaults: new { controller = "RegisterCourse", action = "Index", id = UrlParameter.Optional },
-                namespaces: new string[] { "MvcNangCao.Areas.Home.Controllers" }
-            ).DataTokens.Add("area", "home");
-
-            routes.MapRoute(
                 name: "DangKyTaiKhoan",
                 url: "dang-ky-tai-khoan",
                 defaults: new { controller = "RegisterAccount", action = "Register", id = UrlParameter.Optional },
