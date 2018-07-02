@@ -138,6 +138,7 @@
     <Compile Include="Schema\Permission.cs" />
     <Compile Include="Schema\PhongHoc.cs" />
     <Compile Include="Schema\PhongHocTrans.cs" />
+    <Compile Include="Schema\Photos.cs" />
     <Compile Include="Schema\Slide.cs" />
     <Compile Include="Schema\CauHinh.cs" />
     <Compile Include="Schema\TaiSanTrongPhong.cs" />

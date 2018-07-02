@@ -34,6 +34,26 @@ namespace TTTH.DataBase.Schema
         [Column(TypeName = "date")]
         public DateTime? NgayKhaiGiang { get; set; }
 
+        [Column(TypeName = "money")]
+        public decimal HocPhi { get; set; }
+
+        public double ChietKhau { get; set; }
+
+        [Required]
+        [StringLength(100)]
+        public string DoTuoi { set; get; }
+
+        [Required]
+        [StringLength(100)]
+        public string ThoiGian { set; get; }
+
+        [Column(TypeName = "date")]
+        public DateTime? ThoiGianKetThuc { set; get; }
+
+        [Required]
+        [StringLength(100)]
+        public string LichHoc { set; get; }
+
         public bool ChoPhepDangKy { set; get; }
 
         public bool HienThi { set; get; }

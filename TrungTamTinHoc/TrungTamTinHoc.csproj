@@ -2422,6 +2422,10 @@
     <Content Include="public\img\icon\arrow.png" />
     <Content Include="public\img\icon\cap-dark.jpg" />
     <Content Include="public\img\icon\cap-white.jpg" />
+    <Content Include="public\img\album\1.jpg" />
+    <Content Include="public\img\album\2.jpg" />
+    <Content Include="public\img\album\3.jpg" />
+    <Content Include="public\img\album\4.jpg" />
     <Content Include="public\img\layout-admin\american-express.png" />
     <Content Include="public\img\layout-admin\cropper.jpg" />
     <Content Include="public\img\layout-admin\img.jpg" />

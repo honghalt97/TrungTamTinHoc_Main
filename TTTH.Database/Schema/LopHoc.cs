@@ -27,16 +27,11 @@ namespace TTTH.DataBase.Schema
 
         public int ThoiGianMoiTiet { get; set; }
 
-        [Column(TypeName = "money")]
-        public decimal HocPhi { get; set; }
-
         public int SoLuongHocVien { get; set; }
 
         public DateTime ThoiGianBatDau { get; set; }
 
         public DateTime ThoiGianKetThuc { get; set; }
-
-        public double ChietKhau { get; set; }
 
         public bool ChoPhepDangKy { set; get; }
 

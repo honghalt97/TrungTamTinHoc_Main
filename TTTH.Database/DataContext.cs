@@ -61,6 +61,7 @@ namespace TTTH.DataBase
         public virtual DbSet<Permission> Permission { get; set; }
         public virtual DbSet<PhongHoc> PhongHoc { get; set; }
         public virtual DbSet<PhongHocTrans> PhongHocTrans { get; set; }
+        public virtual DbSet<Photos> Photos { get; set; }
         public virtual DbSet<Slide> Slide { get; set; }
         public virtual DbSet<TaiSanTrongPhong> TaiSanTrongPhong { get; set; }
         public virtual DbSet<TinTuc> TinTuc { get; set; }
@@ -80,7 +81,7 @@ namespace TTTH.DataBase
         public DataContext()
            //@"Data Source=103.95.197.121;Initial Catalog=TrungTamTinHoc_DEV;User Id=sa;Password=Admin@123;MultipleActiveResultSets=True;"
            //@"Data Source=NGOCQUY\SQLEXPRESS;Initial Catalog=TrungTamTinHoc_DEV;Integrated Security=True;"
-           : base(@"Data Source=NGOCQUY\SQLEXPRESS;Initial Catalog=TrungTamTinHoc_DEV;Integrated Security=True;")
+           : base(@"Data Source=103.95.197.121;Initial Catalog=TrungTamTinHoc_DEV;User Id=sa;Password=Admin@123;MultipleActiveResultSets=True;")
         {
             Database.SetInitializer<DataContext>(new TaoDataBase());
         }
@@ -311,7 +312,7 @@ namespace TTTH.DataBase
                 .HasForeignKey(e => e.IdLoaiTaiSan)
                 .WillCascadeOnDelete(false);
 
-            modelBuilder.Entity<LopHoc>()
+            modelBuilder.Entity<KhoaHoc>()
                 .Property(e => e.HocPhi)
                 .HasPrecision(19, 2);
 
@@ -612,6 +613,18 @@ namespace TTTH.DataBase
                 .HasMany(e => e.User)
                 .WithOptional(e => e.Xa)
                 .HasForeignKey(e => e.IdXa)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<Xa>()
+                .HasMany(e => e.GiamHo)
+                .WithOptional(e => e.XaGiamHo)
+                .HasForeignKey(e => e.IdXaGiamHo)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<Xa>()
+                .HasMany(e => e.HocVien)
+                .WithOptional(e => e.XaHocVien)
+                .HasForeignKey(e => e.IdXaHocVien)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<XepLoai>()

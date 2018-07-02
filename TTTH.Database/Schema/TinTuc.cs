@@ -25,7 +25,11 @@ namespace TTTH.DataBase.Schema
         [Required]
         [StringLength(255)]
         public string AnhMinhHoa { get; set; }
-        
+
+        [Required]
+        [StringLength(255)]
+        public string AnhChinh { get; set; }
+
         public virtual ICollection<CommentTinTuc> CommentTinTuc { get; set; }
         
         public virtual ICollection<DanhGiaTinTuc> DanhGiaTinTuc { get; set; }

@@ -14,9 +14,6 @@ namespace TTTH.DataBase.Schema
         public string TenLop { get; set; }
 
         [Required]
-        public string ChiTiet { get; set; }
-
-        [Required]
         [StringLength(500)]
         public string TomTat { get; set; }
 

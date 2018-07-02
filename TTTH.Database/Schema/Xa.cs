@@ -12,6 +12,8 @@ namespace TTTH.DataBase.Schema
         public Xa()
         {
             User = new HashSet<User>();
+            GiamHo = new HashSet<DangKyLopHoc>();
+            HocVien = new HashSet<DangKyLopHoc>();
         }
 
         [Key]
@@ -29,5 +31,9 @@ namespace TTTH.DataBase.Schema
         public virtual Huyen Huyen { get; set; }
         
         public virtual ICollection<User> User { get; set; }
+
+        public virtual ICollection<DangKyLopHoc> GiamHo { get; set; }
+
+        public virtual ICollection<DangKyLopHoc> HocVien { get; set; }
     }
 }
