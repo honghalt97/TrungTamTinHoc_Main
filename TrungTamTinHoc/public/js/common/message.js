@@ -40,6 +40,8 @@
         '37': 'Email này đã tồn tại',
         '38': 'Email này không tồn tại trong hệ thống',
         '39': 'Mail kích hoạt đã được gửi đến địa chỉ email bạn đăng ký, vui lòng kiểm tra email để kích hoạt tài khoản',
+        '40': 'Cảm ơn bạn! Vui lòng kiểm tra hộp thư đến của bạn để nhận được những tin tức mới nhất và ưu đãi độc quyền về các khóa học và dịch vụ của chúng tôi.',
+        '41': 'Cảm ơn bạn đã gửi tin nhắn đến chúng tôi! Chúng tôi sẽ phản hồi sớm nhất có thể!',
         '100': 'Có lỗi xảy ra trong quá trình xử lý, vui lòng thử lại'
     },
     'en':
@@ -83,6 +85,8 @@
         '37': 'Email này đã tồn tại',
         '38': 'Email này không tồn tại trong hệ thống',
         '39': 'Mail kích hoạt đã được gửi đến địa chỉ email bạn đăng ký, vui lòng kiểm tra email để kích hoạt tài khoản',
+        '40': 'Thank you! Please check your inbox to receive the latest news and exclusive offers on our courses and services.',
+        '41': 'Thank you to send message to us! We will reply soon!',
         '100' : 'Có lỗi xảy ra trong quá trình xử lý, vui lòng thử lại'
     }
 };
@@ -112,7 +116,7 @@ var _typeMsg = {
     '17': 4,
     '18': 2,
     '19': 4,
-    '10': 4,
+    '20': 4,
     '21': 1,
     '22': 2,
     '23': 2,
@@ -132,6 +136,8 @@ var _typeMsg = {
     '37': 4,
     '38': 4,
     '39': 2,
+    '40': 2,
+    '41': 2,
     '100': 4
 };
 var _title = {

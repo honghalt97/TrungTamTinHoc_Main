@@ -30,7 +30,7 @@ namespace TrungTamTinHoc
             routes.MapRoute(
                 name: "Contact",
                 url: "contact",
-                defaults: new { controller = "Home", action = "Contact", id = UrlParameter.Optional },
+                defaults: new { controller = "Contact", action = "Contact", id = UrlParameter.Optional },
                 namespaces: new string[] { "MvcNangCao.Areas.Home.Controllers" }
             ).DataTokens.Add("area", "home");
 
@@ -80,6 +80,13 @@ namespace TrungTamTinHoc
                 name: "KichHoatTaiKhoan",
                 url: "kich-hoat-tai-khoan",
                 defaults: new { controller = "RegisterAccount", action = "AciveAccount", id = UrlParameter.Optional },
+                namespaces: new string[] { "MvcNangCao.Areas.Home.Controllers" }
+            ).DataTokens.Add("area", "home");
+            
+            routes.MapRoute(
+                name: "SubscribeEmail",
+                url: "",
+                defaults: new { controller = "Home", action = "SubscribeEmail", id = UrlParameter.Optional },
                 namespaces: new string[] { "MvcNangCao.Areas.Home.Controllers" }
             ).DataTokens.Add("area", "home");
 

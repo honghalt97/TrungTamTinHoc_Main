@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -21,5 +22,6 @@ namespace TrungTamTinHoc.Areas.Home.Models.Schema
         public string WhyUs { set; get; }
         public CacKhoaHoc CacKhoaHoc { set; get; }
         public List<GiangVien> DanhSachGiangVien { set; get; }
+        
     }
 }

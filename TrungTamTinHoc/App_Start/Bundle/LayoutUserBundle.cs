@@ -31,8 +31,11 @@ namespace TrungTamTinHoc.App_Start.Bundle
                 "~/public/js/common/common.js",
                 "~/public/js/common/message.js",
                 "~/public/js/common/jquery.error-style.js",
-                "~/public/js/common/jquery.alerts.js"
+                "~/public/js/common/jquery.alerts.js",
+                "~/public/js/layout-user/subscribe.js"
             ));
+            
+
             bundles.Add(new StyleBundle("~/public/css/userCommon").Include(
                 "~/public/assets/bootstrap/dist/css/bootstrap.css",
                 "~/public/assets/bootstrap/dist/css/bootstrap-theme.css",

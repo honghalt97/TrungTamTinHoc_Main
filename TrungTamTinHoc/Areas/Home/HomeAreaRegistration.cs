@@ -49,6 +49,13 @@ namespace TrungTamTinHoc.Areas.Home
                 "home/send-email",
                 new { controller = "RegisterAccount", action = "SendEmail", id = UrlParameter.Optional }
             );
+
+            context.MapRoute(
+                "homeSendContact",
+                "home/send-contact",
+                new { controller = "Contact", action = "SaveContact", id = UrlParameter.Optional }
+            );
+
             context.MapRoute(
                 "homeDefault",
                 "home/{controller}/{action}/{id}",

@@ -17,6 +17,9 @@ namespace TTTH.DataBase.Schema
         [StringLength(255)]
         public string Email { get; set; }
 
+        [StringLength(15)]
+        public string SoDienThoai { get; set; }
+
         [Required]
         public string NoiDung { get; set; }
 

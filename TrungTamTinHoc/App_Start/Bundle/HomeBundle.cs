@@ -22,13 +22,17 @@ namespace TrungTamTinHoc.App_Start.Bundle
                 "~/public/assets/bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js",
                 "~/public/js/home/registerAccount/register.js"
             ));
-
+            
             bundles.Add(new ScriptBundle("~/public/js/registerSuccess").Include(
                 "~/public/js/home/registerAccount/registerSuccess.js"
             ));
 
             bundles.Add(new ScriptBundle("~/public/js/activeAccount").Include(
                 "~/public/js/home/registerAccount/activeAccount.js"
+            ));
+            
+            bundles.Add(new ScriptBundle("~/public/js/contact").Include(
+                "~/public/js/home/contact/contact.js"
             ));
 
             bundles.Add(new StyleBundle("~/public/css/registerAccount").Include(

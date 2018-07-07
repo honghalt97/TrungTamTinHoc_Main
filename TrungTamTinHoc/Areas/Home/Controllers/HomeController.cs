@@ -5,7 +5,11 @@ using System.Web;
 using System.Web.Mvc;
 using TrungTamTinHoc.Areas.Home.Models;
 using TrungTamTinHoc.Areas.Home.Models.Schema;
+using TTTH.Common;
 using TTTH.DataBase;
+using TTTH.Validate;
+using static TTTH.Common.Enums.ConstantsEnum;
+using static TTTH.Common.Enums.MessageEnum;
 
 namespace TrungTamTinHoc.Areas.Home.Controllers
 {
@@ -61,9 +65,37 @@ namespace TrungTamTinHoc.Areas.Home.Controllers
             ViewBag.text = new HomeModel().LoadAbout();
             return View("About");
         }
-        public ActionResult Contact()
+
+        /// <summary>
+        /// Đăng ký theo dõi qua email theo thông tin người dùng đưa lên
+        /// Kiểm tra email đã tồn tại hay chưa
+        /// Author       :   HaLTH - 03/06/2018 - create
+        /// </summary>
+        /// <param name="account">Thông tin tài khoản đăng ký mà người dùng nhập vào</param>
+        /// <returns>Chỗi Json chứa kết quả của việc tạo tài khoản</returns>
+        /// <remarks>
+        /// Method: POST
+        /// RouterName: homeCreateAccount
+        /// </remarks>
+        public ActionResult SubscribeEmail(string Email)
         {
-            return View();
+            ResponseInfo response = new ResponseInfo();
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    response = new HomeModel().DangKyTheoDoi(Email);
+                }
+            }
+            catch 
+            {
+                response.Code = (int)CodeResponse.ServerError;
+                response.MsgNo = (int)MsgNO.ServerError;
+            }
+            return Json(response, JsonRequestBehavior.AllowGet);
+            
         }
+
+        
     }
 }

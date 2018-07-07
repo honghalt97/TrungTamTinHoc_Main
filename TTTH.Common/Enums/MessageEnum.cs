@@ -28,6 +28,7 @@ namespace TTTH.Common.Enums
             TenDangNhapSai = 34,
             EmailKhongTonTai = 38,
             DaGuiMailKichHoat = 39,
+            EmailDaDangKy = 40,
             ServerError = 100
         }
     }

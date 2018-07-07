@@ -250,6 +250,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Infomation contact.
+        /// </summary>
+        public static string Infomationcontact {
+            get {
+                return ResourceManager.GetString("Infomationcontact", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Language.
         /// </summary>
         public static string Language {
@@ -358,6 +367,24 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Message.
+        /// </summary>
+        public static string Message {
+            get {
+                return ResourceManager.GetString("Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name.
+        /// </summary>
+        public static string Name {
+            get {
+                return ResourceManager.GetString("Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Do not have an account?.
         /// </summary>
         public static string NotHaveAccount {
@@ -381,6 +408,15 @@ namespace Resources {
         public static string Password {
             get {
                 return ResourceManager.GetString("Password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Phone Number.
+        /// </summary>
+        public static string PhoneNumber {
+            get {
+                return ResourceManager.GetString("PhoneNumber", resourceCulture);
             }
         }
         
@@ -462,6 +498,51 @@ namespace Resources {
         public static string SearchHere {
             get {
                 return ResourceManager.GetString("SearchHere", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Send.
+        /// </summary>
+        public static string Send {
+            get {
+                return ResourceManager.GetString("Send", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Send Success Contact.
+        /// </summary>
+        public static string SendSuccessContact {
+            get {
+                return ResourceManager.GetString("SendSuccessContact", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Thank you for sending me an email! We will send feedback to an email you registered as soon as possible. Thanks!.
+        /// </summary>
+        public static string SendSuccessContactPart1 {
+            get {
+                return ResourceManager.GetString("SendSuccessContactPart1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Send Us A Message.
+        /// </summary>
+        public static string SendUsAMessage {
+            get {
+                return ResourceManager.GetString("SendUsAMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Social Network.
+        /// </summary>
+        public static string SocialNetwork {
+            get {
+                return ResourceManager.GetString("SocialNetwork", resourceCulture);
             }
         }
         

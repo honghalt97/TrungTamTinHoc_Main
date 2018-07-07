@@ -6,6 +6,9 @@ using TrungTamTinHoc.Areas.Home.Models.Schema;
 using TTTH.Common;
 using TTTH.DataBase;
 using static TTTH.Common.Enums.ConstantsEnum;
+using static TTTH.Common.Enums.MessageEnum;
+using TblDangKyTheoDoi = TTTH.DataBase.Schema.DangKyTheoDoi;
+using System.Data.Entity;
 
 namespace TrungTamTinHoc.Areas.Home.Models
 {
@@ -175,5 +178,76 @@ namespace TrungTamTinHoc.Areas.Home.Models
                 throw e;
             }
         }
+
+        /// <summary>
+        /// Đăng ký theo dõi qua email cho người dùng dựa vào thông tin đã cung cấp.
+        /// Author       :   HaLTH - 03/07/2018 - create
+        /// </summary>
+        /// <param name="Email">Thông tin email của người dùng</param>
+        /// <returns>Thông tin về việc tạo đăng ký theo dõi thành công hay thất bại</returns>
+        public ResponseInfo DangKyTheoDoi(string Email)
+        {
+            DbContextTransaction transaction = context.Database.BeginTransaction();
+            try
+            {
+                ResponseInfo result = new ResponseInfo();
+                // Kiểm tra xem email đã tồn tại hay chưa
+                // Nếu đã tồn tại thì không lưu vào DB
+                TblDangKyTheoDoi emaildangky = context.DangKyTheoDoi.FirstOrDefault(x => x.Email == Email && !x.DelFlag);
+                if (emaildangky == null)
+                {
+                    //Lưu email vào Table DangKyTheoDoi để người dùng nhận email 
+                    TblDangKyTheoDoi email = new TblDangKyTheoDoi
+                    {
+                        Email = Email
+                    };
+                    context.DangKyTheoDoi.Add(email);
+                    // Lưu vào CSDL
+                    context.SaveChanges();
+                }
+                else
+                {
+                    result.Code = 202;
+                    result.MsgNo = 37;
+                }
+                transaction.Commit();
+
+                result.Code = 202;
+                result.MsgNo = 40;
+
+                return result;
+            }
+            catch (Exception e)
+            {
+                transaction.Rollback();
+                throw e;
+            }
+        }
+
+        ///// <summary>
+        ///// Kiểm tra email đăng ký theo dõi đã tồn tại hay chưa.
+        ///// Author       :   HaLTH - 03/07/2018 - create
+        ///// </summary>
+        ///// <param name="Email">giá trị của email cần kiểm tra</param>
+        ///// <returns>Nếu có tồn tại trả về true, ngược lại trả về false</returns>
+        //public bool CheckExistEmail(string Email)
+        //{
+        //    try
+        //    {
+        //        TblDangKyTheoDoi emaildangky = context.DangKyTheoDoi.FirstOrDefault(x => x.Email == Email && !x.DelFlag);
+        //        if (emaildangky != null)
+        //        {
+        //            return true;
+        //        }
+        //        else
+        //        {
+        //            return false;
+        //        }
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        throw e;
+        //    }
+        //}
     }
 }

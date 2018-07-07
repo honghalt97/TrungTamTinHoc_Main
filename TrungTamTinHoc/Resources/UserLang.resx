@@ -180,6 +180,9 @@
   <data name="IAgreeWith" xml:space="preserve">
     <value>I agree with</value>
   </data>
+  <data name="Infomationcontact" xml:space="preserve">
+    <value>Infomation contact</value>
+  </data>
   <data name="Language" xml:space="preserve">
     <value>Language</value>
   </data>
@@ -216,6 +219,12 @@
   <data name="MenuHome" xml:space="preserve">
     <value>Home</value>
   </data>
+  <data name="Message" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
   <data name="NotHaveAccount" xml:space="preserve">
     <value>Do not have an account?</value>
   </data>
@@ -224,6 +233,9 @@
   </data>
   <data name="Password" xml:space="preserve">
     <value>Password</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>Phone Number</value>
   </data>
   <data name="PrivacyPolicy" xml:space="preserve">
     <value>Privacy Policy</value>
@@ -251,6 +263,21 @@
   </data>
   <data name="SearchHere" xml:space="preserve">
     <value>Search here...</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="SendSuccessContact" xml:space="preserve">
+    <value>Send Success Contact</value>
+  </data>
+  <data name="SendSuccessContactPart1" xml:space="preserve">
+    <value>Thank you for sending me an email! We will send feedback to an email you registered as soon as possible. Thanks!</value>
+  </data>
+  <data name="SendUsAMessage" xml:space="preserve">
+    <value>Send Us A Message</value>
+  </data>
+  <data name="SocialNetwork" xml:space="preserve">
+    <value>Social Network</value>
   </data>
   <data name="StartDate" xml:space="preserve">
     <value>Start date</value>

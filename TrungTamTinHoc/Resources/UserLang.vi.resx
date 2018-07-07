@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="a" xml:space="preserve">
+    <value />
+  </data>
   <data name="ActiveAccount" xml:space="preserve">
     <value>Kích Hoạt Tài Khoản</value>
   </data>
@@ -252,6 +255,12 @@
   <data name="SearchHere" xml:space="preserve">
     <value>Tìm kiếm ở đây...</value>
   </data>
+  <data name="SendSuccessContact" xml:space="preserve">
+    <value>Liên hệ thành công</value>
+  </data>
+  <data name="SendSuccessContactPart1" xml:space="preserve">
+    <value>Cảm ơn bạn đã gửi tin nhắn đến chúng tôi. Chúng tôi sẽ gửi phản hồi thông qua email bạn đã đăng ký sớm nhất có thể. Trân trọng cảm ơn!</value>
+  </data>
   <data name="StartDate" xml:space="preserve">
     <value>Ngày khai giảng</value>
   </data>
@@ -281,5 +290,26 @@
   </data>
   <data name="WhyIpro" xml:space="preserve">
     <value>TẠI SAO LẠI LÀ IPRO?</value>
+  </data>
+  <data name="Infomationcontact" xml:space="preserve">
+    <value>Thông tin liên hệ</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>Gửi</value>
+  </data>
+  <data name="SendUsAMessage" xml:space="preserve">
+    <value>Gửi tin nhắn cho chúng tôi</value>
+  </data>
+  <data name="SocialNetwork" xml:space="preserve">
+    <value>Mạng xã hội</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Họ Tên</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>Số điện thoại</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Tin nhắn</value>
   </data>
 </root>

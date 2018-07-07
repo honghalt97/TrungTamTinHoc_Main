@@ -1,8 +1,13 @@
 ﻿@{
     CaiDatHeThong caiDat = ViewBag.caiDat;
 }
+@section scripts{
+
+    @Scripts.Render("~/public/js/subscribe")
+}
 @using Resources;
 @using TTTH.DataBase.Schema;
+
 <!--Newsletter Area Start-->
 <div class="newsletter-area">
     <div class="container">
@@ -15,10 +20,10 @@
             </div>
             <div class="col-md-7 col-sm-7">
                 <div class="newsletter-form">
-                    <form action="#">
+                    <form id="form-subscribe" action="@Url.RouteUrl("SubscribeEmail")" method="post">
                         <div class="subscribe-form">
-                            <input type="email" name="email" placeholder="@UserLang.EnterYourEmailAddress">
-                            <button type="submit">@UserLang.Subscribe</button>
+                            <input type="email" name="Email" id="Email" class="required email mb-5" maxlength="255" tabindex="1" placeholder="@UserLang.EnterYourEmailAddress">
+                            <button type="button" id="btn-subscribe">@UserLang.Subscribe</button>
                         </div>
                     </form>
                 </div>

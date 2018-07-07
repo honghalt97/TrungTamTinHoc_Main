@@ -120,7 +120,7 @@ function CheckExistAccount(input, type) {
                     else {
                         errorEmail = true;
                     }
-                    
+
                 }
                 else {
                     if (type == 1) {
@@ -184,7 +184,7 @@ function validateValue() {
  * Output       :  
  */
 function CreateAccountResponse(res) {
-    try{
+    try {
         if (res.Code == 200) {
             callLoading();
             $.cookie('tokenAccount', res.ThongTinBoSung1, { expires: timeToken, path: '/' });
